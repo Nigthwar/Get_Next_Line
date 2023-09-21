@@ -1,41 +1,52 @@
-#include"get_next_line_bonus.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   get_next_line_bonus.c                              :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: cguerrei <cguerrei@student.42malaga.com>   +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/09/21 16:11:25 by cguerrei          #+#    #+#             */
+/*   Updated: 2023/09/21 16:11:25 by cguerrei         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-char *ft_free(char **str)
+
+#include "get_next_line_bonus.h"
+
+
+char	*ft_free(char **str)
 {
-    free(*str);
-    *str=NULL;
-    return(NULL);
+	free(*str);
+	*str = NULL;
+	return (NULL);
 }
 
-char *clean_mem(char *men)
+char	*clean_mem(char *men)
 {
-    char *new_mem:
-    char *ptr;
-    int len;
+	char *new_mem : char *ptr;
+	int len;
 
-    ptr = ft_strchr(mem,'\n');
-    if (!ptr)
-    {
-        new_mem = NULL;
-        return(ft_free(&mem));
-    }
-    else
-            len = (ptr - men) +1;
-    if (!mem[len])
-    
-        return(ft_free(&mem));
-    return(new_mem);
-    
-    
+	ptr = ft_strchr(mem, '\n');
+	if (!ptr)
+	{
+		new_mem = NULL;
+		return (ft_free(&mem));
+	}
+	else
+		len = (ptr - men) + 1;
+	if (!mem[len])
+
+		return (ft_free(&mem));
+	return (new_mem);
 }
 
-char *new_line(char *mem)
+char	*new_line(char *mem)
 {
-    char *line;
-    char *ptr;
-    int len;
+	char *line;
+	char *ptr;
+	int len;
 
-    ptr = ft_strchr(mem, '\n');
-    len = (ptr - mem) + 1;
-    line = ft_substr(mem ,0,len)
+	ptr = ft_strchr(mem, '\n');
+	len = (ptr - mem) + 1;
+	line = ft_substr(mem, 0, len)
 }
