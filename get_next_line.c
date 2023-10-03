@@ -23,25 +23,25 @@ char	*ft_free(char **str)
 	return (NULL);
 }
 
-char	*clean_storage(char *storage)
+char	*clean_storage(char *mem)
 {
 	char	*new_storage;
 	char	*ptr;
 	int		len;
 
-	ptr = ft_strchr(storage, '\n');
+	ptr = ft_strchr(mem, '\n');
 	if (!ptr)
 	{
 		new_storage = NULL;
-		return (ft_free(&storage));
+		return (ft_free(&mem));
 	}
 	else
-		len = (ptr - storage) + 1;
-	if (!storage[len])
+		len = (ptr - mem) + 1;
+	if (!mem[len])
 
-		return (ft_free(&storage));
-	new_storage = ft_substr(storage, len, ft_strlen(storage) - len);
-	ft_free(&storage);
+		return (ft_free(&mem));
+	new_storage = ft_substr(mem, len, ft_strlen(mem) - len);
+	ft_free(&mem);
 	if (!new_storage)
 
 		return (NULL);

@@ -2,18 +2,18 @@
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   get_next_line_bonus.c                              :+:      :+:    :+:   */
-/*                                                    +:+ +:+        
-	+:+     */
-/*   By: cguerrei <cguerrei@student.42malaga.com>   +#+  +:+      
-	+#+        */
-/*                                                +#+#+#+#+#+  
-	+#+           */
-/*   Created: 2023/10/03 13:49:25 by cguerrei          #+#    #+#             */
-/*   Updated: 2023/10/03 13:49:25 by cguerrei         ###   ########.fr       */
+/*                                                    +:+ +:+         +:+     */
+/*   By: cguerrei <cguerrei@student.42malaga.com>   +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/10/03 15:39:19 by cguerrei          #+#    #+#             */
+/*   Updated: 2023/10/03 15:39:19 by cguerrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+
+
 #include "get_next_line_bonus.h"
+
 
 char	*ft_free(char **str)
 {
@@ -24,9 +24,9 @@ char	*ft_free(char **str)
 
 char	*clean_mem(char *men)
 {
-	char	*new_mem;
-	char	*ptr;
-	int	len;
+	char *new_mem;
+	char *ptr;
+	int len;
 
 	ptr = ft_strchr(mem, '\n');
 	if (!ptr)
@@ -44,7 +44,7 @@ char	*clean_mem(char *men)
 
 char	*new_line(char *mem)
 {
-	char	*line;
+	char	line;
 	char	*ptr;
 	int		len;
 

@@ -6,7 +6,7 @@
 /*   By: cguerrei <cguerrei@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/03 13:46:48 by cguerrei          #+#    #+#             */
-/*   Updated: 2023/10/03 13:47:03 by cguerrei         ###   ########.fr       */
+/*   Updated: 2023/10/03 15:39:08 by cguerrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,7 @@ size_t	ft_strlen(char *s);
 char	*ft_strjoin(char *s1, char *s2);
 char	*ft_strdup(char *s1);
 char	*ft_strchr(char *s, int c);
-char	*ft_substr(char *s, int c);
+char	*ft_substr(char *s, unsigned int start, size_t len);
 char	*get_next_line(int fd);
 char	*ft_free(char **str);
-
 #endif

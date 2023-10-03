@@ -5,19 +5,24 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: cguerrei <cguerrei@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/21 16:12:54 by cguerrei          #+#    #+#             */
-/*   Updated: 2023/09/21 16:12:54 by cguerrei         ###   ########.fr       */
+/*   Created: 2023/10/03 15:49:33 by cguerrei          #+#    #+#             */
+/*   Updated: 2023/10/03 15:49:33 by cguerrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef GET_NEXT_LINE_H
-#define GET_NEXT_LINE_H
+# define GET_NEXT_LINE_H
 
 # include <fcntl.h>
+# include <limits.h>
 # include <stdio.h>
 # include <stdlib.h>
 # include <unistd.h>
-# include <limits.h>
+
+#define BUFFER_SIZE 1
+#ifdef BUFFER_SIZE
+#endif
+
 
 size_t	ft_strlcpy(char *dst, char *src, size_t dstsize);
 size_t	tf_strlen(char *s);
