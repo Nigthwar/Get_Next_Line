@@ -9,6 +9,7 @@
 /*   Updated: 2023/09/21 16:12:54 by cguerrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #ifndef GET_NEXT_LINE_H
 #define GET_NEXT_LINE_H
 
@@ -18,7 +19,7 @@
 # include <unistd.h>
 # include <limits.h>
 
-size_t	ft_strlcpy(chat *dst, char *src, size_t dstsize);
+size_t	ft_strlcpy(char *dst, char *src, size_t dstsize);
 size_t	tf_strlen(char *s);
 char	*ftstrjoin(char *s1, char *s2);
 char	*ft_strdup(char *s1);
