@@ -22,7 +22,7 @@ char	*ft_free(char **str)
 	return (NULL);
 }
 
-char	*clean_mem(char *men)
+char	*clean_mem(char *mem)
 {
 	char *new_mem;
 	char *ptr;
@@ -35,7 +35,7 @@ char	*clean_mem(char *men)
 		return (ft_free(&mem));
 	}
 	else
-		len = (ptr - men) + 1;
+		len = (ptr - mem) + 1;
 	if (!mem[len])
 
 		return (ft_free(&mem));
