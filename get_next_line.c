@@ -109,3 +109,4 @@ char	*get_next_line(int fd)
 	storage = clean_storage(storage);
 	return (line);
 }
+
